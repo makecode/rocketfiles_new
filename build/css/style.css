@@ -320,7 +320,7 @@ h3 { font-size: 18px; color: #434a4d; font-family: "roboto-bold", Helvetica, Ari
 
 body { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; font-size: 13px; line-height: 1.4; color: #434a4d; font-family: "roboto-regular", Helvetica, Arial, sans-serif; }
 
-a { display: -webkit-inline-flex; display: -ms-inline-flexbox; display: inline-flex; text-decoration: none; cursor: pointer; transition: all 0.3s ease-in-out; }
+a { display: -webkit-inline-flex; display: -ms-inline-flexbox; display: inline-flex; text-decoration: none; cursor: pointer; color: #434a4d; transition: all 0.3s ease-in-out; }
 a:hover { text-decoration: underline; }
 
 img { display: inline-block; width: 100%; }
@@ -393,6 +393,7 @@ img { display: inline-block; width: 100%; }
 .aside__box .article { padding: 14px 0; }
 .aside__box .article__left { margin-right: 13px; }
 .aside__box .list__el { padding-bottom: 0; }
+.aside .banner { margin-bottom: 15px; }
 
 .block-head { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-align-items: center; -ms-flex-align: center; align-items: center; padding-bottom: 10px; border-bottom: 1px solid #e3e3e3; }
 .block-head__left { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
@@ -738,7 +739,7 @@ img { display: inline-block; width: 100%; }
 .software__btn { text-align: center; width: 126px; height: 30px; line-height: 30px; background-color: #45b54d; border: 1px solid #45b54d; color: #fff; cursor: pointer; }
 .software__btn:hover { background-color: #3cc044; border-color: #3cc044; }
 
-.tabs { position: relative; margin-top: 15px; }
+.tabs { position: relative; }
 .tabs__list { display: -webkit-flex; display: -ms-flexbox; display: flex; border-bottom: 1px solid #e3e3e3; }
 .tabs__el { padding: 6px 35px 14px; position: relative; font-size: 14px; color: #434a4d; text-transform: uppercase; cursor: pointer; letter-spacing: 0.2px; transition: all 0.3s ease-in-out; font-family: "roboto-bold", Helvetica, Arial, sans-serif; }
 .tabs__el:hover { color: #0091de; }
