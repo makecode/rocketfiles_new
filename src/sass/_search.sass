@@ -1,0 +1,48 @@
+.search
+  position: relative
+  width: 260px
+
+  &:hover
+
+    .ico.is-search
+      border-color: #0aa5f5
+
+      &::after
+        background-color: #0aa5f5
+
+  &__form
+    display: flex
+    flex-direction: row
+
+  &__input
+    display: block
+    padding-left: 12px
+    padding-right: 36px
+    width: 100%
+    height: 36px
+    line-height: 36px
+    background-color: #fff
+    color: $textGreyLight
+    font-size: 14px
+    cursor: text
+    +h400
+
+  &__ico
+    position: absolute
+    right: 10px
+    top: 8px
+    
+  &.is-general
+    width: 560px
+    margin-top: 44px
+    margin-bottom: 40px
+
+    .search
+
+      &__input
+        height: 45px
+        line-height: 45px
+
+      &__ico
+        right: 12px
+        top: 11px

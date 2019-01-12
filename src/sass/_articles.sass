@@ -1,0 +1,44 @@
+.articles
+  margin-top: 10px
+
+  &__list
+    display: flex
+    justify-content: space-between
+
+.article-main
+  position: relative
+  margin-bottom: 20px
+  transition: $general-transition
+
+  &:hover
+    .preview__title
+      text-decoration: underline
+
+  &__img
+    height: 433px
+
+  .preview
+    position: absolute
+    left: 0
+    bottom: 0
+
+.article
+  width: 230px
+  border: 1px solid #eaeaea
+  cursor: pointer
+  transition: $general-transition
+
+  &:hover
+    .article__descr
+      text-decoration: underline
+
+  &__link
+    display: flex
+    flex-direction: column
+
+  &__descr
+    padding: 15px
+    font-size: 14px
+    color: $textGreyDark
+    transition: $general-transition
+    +h300

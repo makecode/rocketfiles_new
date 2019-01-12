@@ -1,0 +1,32 @@
+.app
+  padding: 13px 0
+  // display: inline-flex
+  border-bottom: 1px solid #eaeaea
+  cursor: pointer
+  transition: $general-transition
+
+  &:hover
+    text-decoration: none
+    .app__title,
+    .app__descr
+      color: $textLink
+
+  &__left
+    width: 90px
+    min-width: 90px
+    margin-right: 14px
+
+  &__title
+    color: $textGreyDark
+    font-size: 16px
+    +h700
+
+  &__descr,
+  &__subtitle
+    font-size: 13px
+    color: $textGreyDark
+    +h300
+
+  &__more
+    margin-top: 11px
+    text-align: center

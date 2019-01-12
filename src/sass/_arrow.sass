@@ -1,0 +1,23 @@
+.arrow
+  position: relative
+  display: block
+  width: 10px
+  height: 6px
+  cursor: pointer
+
+  &:after,
+  &:before
+    position: absolute
+    top: 2px
+    content: ''
+    width: 6px
+    height: 1px
+    background-color: $bgBlue
+
+  &:after
+    left: 0
+    transform: rotate(45deg)
+
+  &:before
+    right: 0
+    transform: rotate(-45deg)

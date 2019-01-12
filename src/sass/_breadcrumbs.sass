@@ -1,0 +1,45 @@
+.breadcrumbs
+  display: flex
+  flex-direction: row
+
+  &__el
+    position: relative
+    padding-right: 26px
+
+    &:after,
+    &:before
+      position: absolute
+      content: ''
+      right: 12px
+      width: 1px
+      height: 5px
+      background-color: #7d7d7d
+
+    &:before
+      top: 5px
+      transform: rotate(-45deg)
+
+    &:after
+      bottom: 5px
+      transform: rotate(45deg)
+
+    &:last-child
+      padding-right: 0
+      a
+        color: #68767d
+        pointer-events: none
+        +h300
+
+      &:after,
+      &:before
+        display: none
+
+  &__link,
+  &__link:visited
+    color: $textGreyDark
+    font-size: 13px
+    letter-spacing: 0
+    +h400
+
+    &:hover
+      text-decoration: underline

@@ -1,0 +1,26 @@
+.item
+  display: inline-block
+  width: 262px
+  border: 1px solid #eaeaea
+  cursor: pointer
+  color: $textGreyDark
+
+  &:hover
+    border: 1px solid $bgBlue
+    text-decoration: none
+
+  &__title,
+  &__descr
+    padding-left: 15px
+    padding-right: 30px
+
+  &__title
+    padding-top: 5px
+    padding-bottom: 3px
+    font-size: 16px
+    +h700
+
+  &__descr
+    padding-bottom: 15px
+    font-size: 13px
+    +h300

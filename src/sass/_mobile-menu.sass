@@ -1,0 +1,27 @@
+.mobile-menu
+  width: 250px
+  height: 100%
+  background-color: $bgBlue
+  position: absolute
+  top: 0
+  left: -100%
+  transition: all .35s ease-in-out
+  z-index: 5
+
+  &__top
+    height: 60px
+    line-height: 60px
+
+  &__list
+    text-align: center
+
+  &__el
+    height: 50px
+    line-height: 50px
+
+  &__link
+    color: #fff
+    text-transform: uppercase
+
+  &.is-open
+    left: 0

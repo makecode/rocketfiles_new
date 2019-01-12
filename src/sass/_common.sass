@@ -1,0 +1,159 @@
+//variables
+$bgBlue: #008ad1
+$bgGreenLight: #48b950
+$bgGreenDark: #42ad49
+
+$textLink: #0091de
+$bgBlueMenu: #0aa5f5
+$textGreyDark: #434a4d
+$textGreyLight: #68767d
+
+$general-transition: all .3s ease-in-out
+
++font("roboto-light", roboto-light)
++font("roboto-regular", roboto-regular)
++font("roboto-bold", roboto-bold)
++font("raleway-light", raleway-light)
++font("raleway-semibold", raleway-semibold)
+
+=h300
+  font-family: "roboto-light", Helvetica, Arial, sans-serif
+
+=h400
+  font-family: "roboto-regular", Helvetica, Arial, sans-serif
+
+=h700
+  font-family: "roboto-bold", Helvetica, Arial, sans-serif
+
+h1
+  font-size: 28px
+  color: $textGreyDark
+  +h700
+
+  span
+    padding-left: 7px
+    font-size: 16px
+    color: $textGreyLight
+    +h300
+
+h2
+  font-size: 22px
+  color: $textGreyDark
+  +h300
+
+h3
+  font-size: 18px
+  color: $textGreyDark
+  +h700
+
+body
+  display: flex
+  flex-direction: column
+  min-width: 1060px
+  font-size: 13px
+  line-height: 1.4
+  color: $textGreyDark
+  +h400
+
+a
+  display: inline-flex
+  text-decoration: none
+  cursor: pointer
+  transition: $general-transition
+
+  &:hover
+    text-decoration: underline
+
+img
+  display: inline-block
+  width: 100%
+
+.i-mb-22
+  margin-bottom: 22px
+
+.i-bold
+  +h700
+
+.i-upper
+  text-transform: uppercase
+
+.atoms
+  width: 1100px
+  margin: 10px auto
+
+.atom
+  margin: 10px 0
+  padding: 10px
+  border: 1px solid #2c2c2c
+
+// common blocks
+
+.copyright
+
+  &__descr
+    font-size: 14px
+    color: #fff
+    +h300
+
+.logo
+  width: 170px
+
+.banner
+
+  &__name
+    display: flex
+    margin-bottom: 6px
+    font-size: 10px
+    color: $textGreyLight
+    +h300
+
+.discussion
+  margin-top: 22px
+  margin-bottom: 60px
+
+  .section-title
+    margin-bottom: 5px
+
+.section-title
+  margin-bottom: 10px
+
+.row
+
+  &__wrap
+    padding-bottom: 24px
+    padding-top: 15px
+    display: flex
+    justify-content: space-between
+    border-bottom: 1px solid #eaeaea
+
+.raiting
+  margin-top: 5px
+  display: flex
+  flex-direction: row
+  align-items: center
+
+  &__text
+    margin: 0 7px 5px 0
+
+.block-info
+  width: 560px
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin: 0 auto
+
+.category
+  padding: 5px 0
+  border-bottom: 1px solid #eaeaea
+  transition: all .3s ease-in-out
+
+.cards
+
+  &__wrap
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-bottom: 20px
+
+  &__more
+    text-align: center

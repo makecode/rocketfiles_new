@@ -1,0 +1,74 @@
+.tabs
+  position: relative
+  margin-top: 15px
+
+  &__list
+    display: flex
+    border-bottom: 1px solid #e3e3e3
+
+  &__el
+    padding: 6px 35px 14px
+    position: relative
+    font-size: 14px
+    color: $textGreyDark
+    text-transform: uppercase
+    cursor: pointer
+    letter-spacing: .2px
+    transition: $general-transition
+    +h700
+
+    &:hover
+      color: $textLink
+
+    &:after
+      position: absolute
+      left: 0
+      bottom: -1px
+      content: ''
+      width: 100%
+      height: 1px
+      background-color: transparent
+
+    &.is-active
+      color: $textLink
+
+      &:after
+        height: 2px
+        background-color: $bgBlue
+
+      .drop-down-tab
+        display: block
+
+  &__content
+    display: none
+
+    &.is-visible
+      display: block
+      +clr()
+
+    .empty
+      padding: 300px
+
+  &__left
+    float: left
+
+  &__right
+    float: right
+
+  &__scroll
+    position: absolute
+    top: 7px
+    right: 34px
+
+  &.is-small
+
+    .tabs
+      margin-top: 0
+
+    .tabs__list
+      justify-content: space-around
+
+    .tabs__el
+      padding: 12px 16px
+
+

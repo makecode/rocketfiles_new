@@ -1,0 +1,171 @@
+.ico
+  display: inline-block
+  vertical-align: middle
+  position: relative
+
+  &.is-search,
+  &.is-search-general
+    margin: 0 3px 3px 0
+    border: 2px solid
+    border-radius: 50%
+    transition: $general-transition
+
+    &::after
+      position: absolute
+      content: ''
+      right: -5px
+      bottom: -2px
+      width: 7px
+      height: 2px
+      transform: rotate(45deg)
+      transition: $general-transition
+
+  &.is-search
+    width: 14px
+    height: 14px
+    border-color: #0091db
+
+    &::after
+      background-color: #0091db
+
+  &.is-search-general
+    width: 16px
+    height: 16px
+    border-color: $textGreyDark
+
+    &::after
+      background-color: $textGreyDark
+
+  &.is-arrow-down
+    background: url("../img/ico-arrow-down.png")
+    width: 28px
+    height: 31px
+
+  &.is-stars
+    background: url("../img/ico-stars.png")
+    width: 73px
+    height: 12px
+
+  &.is-windows
+    background: url("../img/ico-windiws.png")
+    width: 15px
+    height: 14px
+
+  &.is-apple
+    background: url("../img/ico-apple.png")
+    width: 15px
+    height: 17px
+
+  &.is-android
+    background: url("../img/ico-android.png")
+    width: 15px
+    height: 16px
+
+  &.is-portable
+    background: url("../img/ico-portable.png")
+    width: 16px
+    height: 14px
+
+  &.is-x64
+    background: url("../img/ico_portable.png")
+    width: 18px
+    height: 18px
+
+  &.is-checksum
+    background: url("../img/ico-checksum.png")
+    width: 18px
+    height: 18px
+
+  &.is-social
+    background: url("../img/ico-social.png")
+    width: 21px
+    height: 18px
+    transition: $general-transition
+
+    &:hover
+      background: url("../img/ico-social-blue.png")
+
+  &.is-arrow
+    background: url("../img/ico-arrow.png")
+    width: 10px
+    height: 6px
+
+  &.is-arrow_right
+    background: url("../img/ico_arrow_right.png")
+    width: 6px
+    height: 10px
+
+  &.is-update
+    background: url("../img/ico-updated.png")
+    width: 17px
+    height: 15px
+
+  &.is-dev
+    background: url("../img/ico-dev.png")
+    width: 18px
+    height: 12px
+
+  &.is-home
+    background: url("../img/ico-home.png")
+    width: 16px
+    height: 16px
+
+  &.is-info
+    background: url("../img/ico-info.png")
+    width: 16px
+    height: 16px
+
+  &.is-file-size
+    background: url("../img/ico-file-size.png")
+    width: 17px
+    height: 16px
+
+  &.is-download
+    background: url("../img/ico-download.png")
+    width: 16px
+    height: 14px
+
+  &.is-file-size
+    background: url("../img/ico-file-size.png")
+    width: 17px
+    height: 16px
+
+  &.is-settings
+    background: url("../img/ico-settings.png")
+    width: 16px
+    height: 16px
+
+  &.is-folder
+    background: url("../img/ico-folder.png")
+    width: 16px
+    height: 13px
+
+  &.is-fb,
+  &.is-tw,
+  &.is-gp
+    width: 30px
+    height: 30px
+
+  &.is-fb
+    background: url("../img/fb.png")
+    background-color: #3a73b7
+
+    &:hover
+      background-color: #3a7fd3
+
+
+  &.is-tw
+    background: url("../img/tw.png")
+    background-color: #56b6ff
+
+    &:hover
+      background-color: #68c1ff
+
+  &.is-gp
+    background: url("../img/G+.png")
+    background-color: #ff5e3c
+
+    &:hover
+      background-color: #ff7353
+
+

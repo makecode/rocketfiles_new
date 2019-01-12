@@ -1,0 +1,83 @@
+.btn-transparent
+  display: inline-block
+  font-size: 13px
+  width: 100px
+  height: 26px
+  line-height: 25px
+  color: #079eeb
+  text-align: center
+  border: 1px solid #079eeb
+  background-color: transparent
+  transition: $general-transition
+  cursor: pointer
+
+  &:hover
+    background-color: #079eeb
+    color: white
+    text-decoration: none
+
+  &.large
+    width: 160px
+    height: 30px
+    line-height: 30px
+
+.btn-green
+  display: flex
+  color: white
+  height: 70px
+  line-height: 70px
+  transition: $general-transition
+
+  &:hover
+    text-decoration: none
+    .btn-green__left
+      background-color: #42ad49
+
+    .btn-green__right
+      background-color: #48b950
+
+  &__left
+    padding: 0 13px
+    background-color: #39ac42
+
+  &__right
+    display: flex
+    flex-direction: column
+    padding-left: 12px
+    padding-right: 45px
+    background-color: #45b54d
+    line-height: 1.5
+
+  span
+    display: flex
+    color: white
+    &:first-child
+      margin-top: 12px
+      font-size: 17px
+      +h700
+
+    &:last-child
+      font-size: 11px
+      +h300
+
+.btn-scroll
+  cursor: pointer
+
+.btn-link
+  color: #079eeb
+  &:hover
+    text-decoration: none
+
+.btn-blue
+  width: 140px
+  height: 35px
+  line-height: 35px
+  text-align: center
+  color: #FFF
+  background-color: #079eeb
+  font-size: 13px
+  transition: all .3s ease-in-out
+  cursor: pointer
+
+  &:hover
+    background-color: #0aa5f5
