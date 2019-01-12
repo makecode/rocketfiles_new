@@ -4,23 +4,7 @@
   &__list
     display: flex
     justify-content: space-between
-
-.article-main
-  position: relative
-  margin-bottom: 20px
-  transition: $general-transition
-
-  &:hover
-    .preview__title
-      text-decoration: underline
-
-  &__img
-    height: 433px
-
-  .preview
-    position: absolute
-    left: 0
-    bottom: 0
+    flex-wrap: wrap
 
 .article
   width: 230px
@@ -42,3 +26,26 @@
     color: $textGreyDark
     transition: $general-transition
     +h300
+
+  img
+    height: 138px
+
+.article-main
+  position: relative
+  margin-bottom: 20px
+  transition: $general-transition
+
+  &:hover
+    .preview__title
+      text-decoration: underline
+
+  &__link
+    display: block
+
+  &__img
+    height: 433px
+
+  .preview
+    position: absolute
+    left: 0
+    bottom: 0
