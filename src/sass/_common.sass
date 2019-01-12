@@ -56,7 +56,7 @@ body
   +h400
 
 a
-  display: inline-flex
+  display: inline-block
   text-decoration: none
   cursor: pointer
   color: $textGreyDark
@@ -68,6 +68,15 @@ a
 img
   display: inline-block
   width: 100%
+
+input[type='text'],
+input[type='search']
+  border-radius: 0
+  -moz-appearance: none
+  -webkit-appearance: none
+
+button
+  background-color: transparent
 
 .i-mb-22
   margin-bottom: 22px
