@@ -10,6 +10,8 @@ $textGreyLight: #68767d
 
 $general-transition: all .3s ease-in-out
 
+$headerHeight: 63px
+
 +font("roboto-light", roboto-light)
 +font("roboto-regular", roboto-regular)
 +font("roboto-bold", roboto-bold)
@@ -54,6 +56,9 @@ body
   line-height: 1.4
   color: $textGreyDark
   +h400
+
+  +r(768)
+    padding-top: $headerHeight
 
 a
   display: inline-block

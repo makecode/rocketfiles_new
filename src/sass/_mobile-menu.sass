@@ -1,16 +1,15 @@
 .mobile-menu
   width: 250px
-  height: 100%
+  height: calc(100% - 63px)
   background-color: #0aa5f5
-  position: absolute
-  top: 0
+  position: fixed
+  top: $headerHeight
   left: -100%
   transition: all .35s ease-in-out
-  z-index: 5
+  z-index: 500
 
   &__top
-    height: 60px
-    line-height: 60px
+    padding: 20px
 
   &__list
     text-align: center
@@ -22,6 +21,13 @@
   &__link
     color: #fff
     text-transform: uppercase
+
+  .search
+    display: none
+    +r(768)
+      display: block
+      width: 100%
+
 
   &.is-open
     left: 0

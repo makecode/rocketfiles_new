@@ -6,8 +6,18 @@
     justify-content: space-between
     flex-wrap: wrap
 
+  &__el
+    width: 230px
+
+    +r(768)
+      width: 48%
+      margin-bottom: 20px
+
+    +r(540)
+      width: 100%
+
 .article
-  width: 230px
+  width: 100%
   border: 1px solid #eaeaea
   cursor: pointer
   transition: $general-transition
@@ -27,9 +37,6 @@
     transition: $general-transition
     +h300
 
-  img
-    height: 138px
-
 .article-main
   position: relative
   margin-bottom: 20px
@@ -43,7 +50,7 @@
     display: block
 
   &__img
-    height: 433px
+    //height: 433px
 
   .preview
     position: absolute
