@@ -16,6 +16,7 @@
   background-color: $bgBlue
 
   &__wrap
+    height: 63px
     position: relative
     display: flex
     flex-direction: row
@@ -131,4 +132,8 @@
     align-items: center
 
     +r(1024)
-      flex-direction: column
+      flex-direction: column-reverse
+
+  &__left
+    +r(1024)
+      margin-top: 5px

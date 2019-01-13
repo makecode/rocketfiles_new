@@ -106,9 +106,9 @@ $(document).ready(function() {
   });
 
   (function () {
-    const delayPopup = 5000;
-    const $popup = $('#promo-timeout-popup');
-    const $btnClose = $('#promo-timeout-popup-close');
+    var delayPopup = 5000;
+    var $popup = $('#promo-timeout-popup');
+    var $btnClose = $('#promo-timeout-popup-close');
 
     function showPopup() {
       $($popup).toggle()
@@ -120,12 +120,6 @@ $(document).ready(function() {
       $($popup).toggle();
     })
   }());
-
-  // var $arrow = $('.arrow');
-  // var $versions = $('.versions__list');
-  // $arrow.click(function () {
-  //   $($versions).addClass('is-visible');
-  // });
 
   var $btnShowAll = $('#btn-show-all');
   var $dropdownCards = $('.dropdown-cards');
