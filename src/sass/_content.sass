@@ -1,0 +1,59 @@
+.content
+  padding-top: 10px
+  padding-bottom: 70px
+
+  &__wrap
+    display: flex
+    justify-content: space-between
+
+    +r(1024)
+      flex-direction: column
+
+  &__left
+    width: 69%
+    +r(1024)
+      margin-right: 0
+      margin-bottom: 30px
+      width: 100%
+
+  &__right
+    width: 31%
+
+    +r(1024)
+      width: 100%
+
+  &.is-main
+
+    .content__wrap
+      padding-bottom: 30px
+
+    .aside__box
+      margin: 0
+
+  &.is-sidebar
+
+    .content
+
+      &__wrap
+        padding-top: 15px
+
+      &__left
+        width: 220px
+        margin-right: 40px
+        flex-shrink: 0
+
+        +r(1024)
+          margin-right: 0
+          width: 100%
+
+      &__right
+        flex-basis: 100%
+
+        +r(1024)
+          width: 100%
+
+    .tabs
+      margin-top: 0
+
+      &__el
+        padding: 6px 27px 14px
