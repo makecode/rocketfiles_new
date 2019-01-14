@@ -1,7 +1,10 @@
 .preview
-  padding: 26px 35px 35px 30px
+  padding: 27px 35px 40px 31px
   color: $textGreyDark
   background-color: rgba(255,255,255,.9)
+
+  +r(768)
+    padding: 20px 20px
 
   &__title
     margin-bottom: 15px
@@ -14,6 +17,15 @@
     +r(768)
       font-size: 20px
 
+    +r(550)
+      font-size: 14px
+
   &__descr
     font-size: 16px
     +h300
+
+    +r(768)
+      font-size: 14px
+
+    +r(550)
+      font-size: 12px
