@@ -401,7 +401,7 @@ button { background-color: transparent; }
 .block-head__left { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
 .block-head__title { margin-right: 22px; font-size: 22px; font-family: "roboto-light", Helvetica, Arial, sans-serif; }
 
-.breadcrumbs { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; }
+.breadcrumbs { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 .breadcrumbs__el { position: relative; padding-right: 26px; }
 .breadcrumbs__el:after, .breadcrumbs__el:before { position: absolute; content: ""; right: 12px; width: 1px; height: 5px; background-color: #7d7d7d; }
 .breadcrumbs__el:before { top: 5px; -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg); }
@@ -801,7 +801,6 @@ button { background-color: transparent; }
 @media only screen and (max-width: 768px){
  body{ padding-top: 63px; }
  .articles__el{ width: 48%; margin-bottom: 20px; }
- .breadcrumbs__link, .breadcrumbs__link:visited{ font-size: 12px; }
  .container{ width: 100%; }
  .header{ position: fixed; top: 0; left: 0; width: 100%; z-index: 500; }
  .pre-footer .list{ margin-right: 25px; }
@@ -815,13 +814,6 @@ button { background-color: transparent; }
  .mobile-menu .search{ display: block; width: 100%; }
  .search{ display: none; } }
 @media only screen and (max-width: 550px){
- .breadcrumbs__el{ padding-right: 18px; }
- .breadcrumbs__el:last-child{ display: none; }
- .breadcrumbs__el:after, .breadcrumbs__el:before{ right: 8px; }
- .breadcrumbs__el:before{ top: 7px; }
- .breadcrumbs__el:after{ bottom: 3px; }
- .breadcrumbs__el:nth-child(4):after, .breadcrumbs__el:nth-child(4):before{ display: none; }
- .breadcrumbs__link, .breadcrumbs__link:visited{ font-size: 10px; }
  .content.is-main .block-head__right{ display: none; }
  .content.is-sidebar .tabs__el{ font-size: 12px; }
  .detailed-info .list{ -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }

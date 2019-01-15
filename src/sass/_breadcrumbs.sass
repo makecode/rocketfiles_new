@@ -1,15 +1,11 @@
 .breadcrumbs
   display: flex
   flex-direction: row
+  flex-wrap: wrap
 
   &__el
     position: relative
     padding-right: 26px
-
-    +r(550)
-      padding-right: 18px
-      &:last-child
-        display: none
 
     &:after,
     &:before
@@ -20,20 +16,13 @@
       height: 5px
       background-color: #7d7d7d
 
-      +r(550)
-        right: 8px
-
     &:before
       top: 5px
       transform: rotate(-45deg)
-      +r(550)
-        top: 7px
 
     &:after
       bottom: 5px
       transform: rotate(45deg)
-      +r(550)
-        bottom: 3px
 
     &:last-child
       padding-right: 0
@@ -46,24 +35,12 @@
       &:before
         display: none
 
-    +r(550)
-      &:nth-child(4)
-        &:after,
-        &:before
-          display: none
-
   &__link,
   &__link:visited
     color: $textGreyDark
     font-size: 13px
     letter-spacing: 0
     +h400
-
-    +r(768)
-      font-size: 12px
-
-    +r(550)
-      font-size: 10px
 
     &:hover
       text-decoration: underline
