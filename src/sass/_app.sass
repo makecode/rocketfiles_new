@@ -5,6 +5,12 @@
   cursor: pointer
   transition: $general-transition
 
+  &.is-article
+    .app__left
+      width: 90px
+      min-width: 90px
+      margin-right: 14px
+
   +r(1024)
     width: 100%
 
@@ -15,8 +21,8 @@
       color: $textLink
 
   &__left
-    width: 90px
-    min-width: 90px
+    width: 40px
+    min-width: 40px
     margin-right: 14px
 
   &__title

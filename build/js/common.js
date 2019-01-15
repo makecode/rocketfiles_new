@@ -105,28 +105,12 @@ $(document).ready(function() {
     }, 1000);
   });
 
-  (function () {
-    var delayPopup = 5000;
-    var $popup = $('#promo-timeout-popup');
-    var $btnClose = $('#promo-timeout-popup-close');
-
-    function showPopup() {
-      $($popup).toggle()
-    }
-
-    setTimeout(showPopup, delayPopup);
-
-    $btnClose.click(function () {
-      $($popup).toggle();
-    })
-  }());
-
   var $btnShowAll = $('#btn-show-all');
   var $dropdownCards = $('.dropdown-cards');
   $btnShowAll.click(function () {
     $(this).hide();
     $($dropdownCards).addClass('is-visible');
-  })
+  });
 
   //hamburger-menu
   $('#hamburger').on('click',function() {

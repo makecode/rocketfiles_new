@@ -451,9 +451,7 @@
             <div class="tabs" id="tabs-big">
               <ul class="tabs__list">
                 <li class="tabs__el is-active">Review</li>
-                <li class="tabs__el">Specification</li>
                 <li class="tabs__el">History</li>
-                <li class="tabs__el">Questions & Answers</li>
               </ul>
               <div class="tabs__scroll">
               <span class="btn-scroll">
@@ -502,7 +500,6 @@
                     </div><!-- end info-text -->
                   </div><!-- end info -->
                 </li>
-                <li class="tabs__content"><div class="empty"></div></li>
                 <li class="tabs__content"><div class="info">
                   <div class="tips">
                     <h2 class="title">Tips and tricks</h2>
@@ -542,7 +539,6 @@
                     <p class="info__descr">Keeping an eye on your system's resources might come as a surprise, because CCleaner only takes advantage of as little as it can. Thus it can run on multiple configurations, not to mention the speed and quality at which it gets the job</p>
                   </div><!-- end info-text -->
                 </div><!-- end info --></li>
-                <li class="tabs__content"><div class="empty"></div></li>
               </ul>
             </div><!-- end tabs -->
             <div class="slider-wrap">
@@ -579,24 +575,40 @@
               <h2 class="title section-title">More info</h2>
               <ul class="list is-horizontal">
                 <li class="list__el">
-                  <i class="ico is-update"></i>
-                  <span class="i-bold i-upper">Last Updated:</span>
-                  <span>2017-03-15</span>
+                  <div class="detail">
+                    <span class="detail__icon">
+                      <i class="ico is-update"></i>
+                    </span>
+                    <span class="detail__title">Last Updated:</span>
+                    <span class="detail__descr">2017-03-15</span>
+                  </div>
                 </li>
                 <li class="list__el">
-                  <i class="ico is-dev"></i>
-                  <span class="i-bold i-upper">Developer:</span>
-                  <span>Piriform</span>
+                  <div class="detail">
+                    <span class="detail__icon">
+                      <i class="ico is-dev"></i>
+                    </span>
+                    <span class="detail__title">Developer:</span>
+                    <span class="detail__descr">Piriform</span>
+                  </div>
                 </li>
                 <li class="list__el">
-                  <i class="ico is-home"></i>
-                  <span class="i-bold i-upper">Homepage:</span>
-                  <span><a href="#">http://piriforms.com</a></span>
+                  <div class="detail">
+                    <span class="detail__icon">
+                      <i class="ico is-home"></i>
+                    </span>
+                    <span class="detail__title">Homepage:</span>
+                    <span class="detail__descr"><a href="#">http://piriforms.com</a></span>
+                  </div>
                 </li>
                 <li class="list__el">
-                  <i class="ico is-info"></i>
-                  <span class="i-bold i-upper">Version:</span>
-                  <span>5.27.5976</span>
+                  <div class="detail">
+                    <span class="detail__icon">
+                      <i class="ico is-info"></i>
+                    </span>
+                    <span class="detail__title">Version:</span>
+                    <span class="detail__descr">5.27.5976</span>
+                  </div>
                   <div class="versions">
                     <span class="arrow"></span>
                     <a class="btn-link" href="#">All versions</a>
@@ -653,55 +665,94 @@
                   </div>
                 </li>
                 <li class="list__el">
-                  <i class="ico is-file-size"></i>
-                  <span class="i-bold i-upper">File size:</span>
-                  <span>8.86 MB</span>
+                  <div class="detail">
+                    <span class="detail__icon">
+                      <i class="ico is-file-size"></i>
+                    </span>
+                    <span class="detail__title">File size:</span>
+                    <span class="detail__descr">8.86 MB</span>
+                  </div>
                 </li>
                 <li class="list__el">
-                  <i class="ico is-download"></i>
-                  <span class="i-bold i-upper">Downloads:</span>
-                  <span>2.172.381</span>
+                  <div class="detail">
+                    <span class="detail__icon">
+                      <i class="ico is-download"></i>
+                    </span>
+                    <span class="detail__title">Downloads:</span>
+                    <span class="detail__descr">2.172.381</span>
+                  </div>
                 </li>
                 <li class="list__el">
-                  <i class="ico is-settings"></i>
-                  <span class="i-bold i-upper">Operating system:</span>
-                  <span>Windows 10, Windows 8/8.1, Windows 7, Windows XP</span>
+                  <div class="detail">
+                    <span class="detail__icon">
+                      <i class="ico is-settings"></i>
+                    </span>
+                    <span class="detail__title">Operating system:</span>
+                    <span class="detail__descr">Windows 10, Windows 8/8.1, Windows 7, Windows XP</span>
+                  </div>
                 </li>
                 <li class="list__el">
-                  <i class="ico is-folder"></i>
-                  <span class="i-bold i-upper">Filename:</span>
-                  <span>CCleaner.5.27.5967.exe</span>
+                  <div class="detail">
+                    <span class="detail__icon">
+                      <i class="ico is-folder"></i>
+                    </span>
+                    <span class="detail__title">Filename:</span>
+                    <span class="detail__descr">CCleaner.5.27.5967.exe</span>
+                  </div>
                 </li>
                 <li class="list__el">
-                  <i class="ico is-checksum"></i>
-                  <span class="i-bold i-upper">MD5 Checksum:</span>
-                  <span>6A56E6BD3E339B0B873A7C339616D72A</span>
+                  <div class="detail">
+                    <span class="detail__icon">
+                      <i class="ico is-checksum"></i>
+                    </span>
+                    <span class="detail__title">MD5 Checksum:</span>
+                    <span class="detail__descr">6A56E6BD3E339B0B873A7C339616D72A</span>
+                  </div>
                 </li>
               </ul>
               <ul class="list is-horizontal">
                 <li class="list__el">
-                  <i class="ico is-windows"></i>
-                  <a class="list__version" href="#">Windows Version</a>
+                  <div class="detail">
+                    <span class="detail__icon">
+                      <i class="ico is-windows"></i>
+                    </span>
+                    <a href="#" class="detail__link">Windows Version</a>
+                  </div>
                 </li>
                 <li class="list__el">
-                  <i class="ico is-apple"></i>
-                  <a class="list__version" href="#">Mac Version</a>
+                  <div class="detail">
+                    <span class="detail__icon">
+                      <i class="ico is-apple"></i>
+                    </span>
+                    <a href="#" class="detail__link">Mac Version</a>
+                  </div>
                 </li>
                 <li class="list__el">
-                  <i class="ico is-android"></i>
-                  <a class="list__version" href="#">Android Version</a>
+                  <div class="detail">
+                    <span class="detail__icon">
+                      <i class="ico is-android"></i>
+                    </span>
+                    <a href="#" class="detail__link">Android Version</a>
+                  </div>
                 </li>
                 <li class="list__el">
-                  <i class="ico is-portable"></i>
-                  <a class="list__version" href="#">Portable Version</a>
+                  <div class="detail">
+                    <span class="detail__icon">
+                      <i class="ico is-portable"></i>
+                    </span>
+                    <a href="#" class="detail__link">Portable Version</a>
+                  </div>
                 </li>
                 <li class="list__el">
-                  <i class="ico is-x64"></i>
-                  <a class="list__version" href="#">x64 Version</a>
+                  <div class="detail">
+                    <span class="detail__icon">
+                      <i class="ico is-x64"></i>
+                    </span>
+                    <a href="#" class="detail__link">x64 Version</a>
+                  </div>
                 </li>
               </ul>
-            </div>
-
+            </div><!-- end detailed-info -->
             <div class="discussion">
               <h2 class="title section-title">Comments</h2>
               <img src="img/disqus.png" alt="disqus"/>
@@ -809,7 +860,7 @@
                 <h3 class="title">Related stories</h3>
                 <ul class="list">
                   <li class="list__el">
-                    <a href="#" class="app">
+                    <a href="#" class="app is-article">
                       <div class="app__left">
                         <img class="app__img"
                          src="img/stories-1.png"
@@ -821,7 +872,7 @@
                     </a>
                   </li>
                   <li class="list__el">
-                    <a href="#" class="app">
+                    <a href="#" class="app is-article">
                       <div class="app__left">
                         <img class="app__img"
                              src="img/stories-2.png"
@@ -833,7 +884,7 @@
                     </a>
                   </li>
                   <li class="list__el">
-                    <a href="#" class="app">
+                    <a href="#" class="app is-article">
                       <div class="app__left">
                         <img class="app__img"
                              src="img/stories-3.png"
@@ -858,23 +909,6 @@
         </div><!-- end content__wrap -->
       </div><!-- end container -->
     </section><!-- end section -->
-    <div class="promo-timeout-popup" id="promo-timeout-popup" style="display:none">
-      <div class="promo-timeout-popup__wrap">
-        <span class="promo-timeout-popup__btn-close" id="promo-timeout-popup-close"></span>
-        <div class="promo-timeout-popup__left">
-          <div class="promo-timeout-popup__logo">
-            <div class="promo-timeout-popup__bg"></div>
-          </div>
-        </div>
-        <div class="promo-timeout-popup__center">
-          <span class="promo-timeout-popup__name">Explore Opera</span>
-          <p class="promo-timeout-popup__descr">The only free browser with a built-in ad blocker and VPN that brings you more speed and privacy.</p>
-        </div>
-        <div class="promo-timeout-popup__right">
-          <a href="#" class="promo-timeout-popup__link">Download</a>
-        </div>
-      </div>
-    </div><!-- end modal-window -->
   </main><!-- end main -->
 
 <div class="pre-footer">
