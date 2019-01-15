@@ -804,15 +804,16 @@ button { background-color: transparent; }
  .breadcrumbs__link, .breadcrumbs__link:visited{ font-size: 12px; }
  .container{ width: 100%; }
  .header{ position: fixed; top: 0; left: 0; width: 100%; z-index: 500; }
- .mobile-menu .search{ display: block; width: 100%; }
  .pre-footer .list{ margin-right: 25px; }
  .preview{ padding: 20px 20px; }
  .preview__title{ font-size: 20px; }
  .preview__descr{ font-size: 14px; }
  .row.top-head .row__wrap{ -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
  .row.top-head .row__left{ margin-bottom: 20px; }
- .search{ display: none; }
  .software__btn{ width: 100px; } }
+@media only screen and (max-width: 600px){
+ .mobile-menu .search{ display: block; width: 100%; }
+ .search{ display: none; } }
 @media only screen and (max-width: 550px){
  .breadcrumbs__el{ padding-right: 18px; }
  .breadcrumbs__el:last-child{ display: none; }
