@@ -131,6 +131,4 @@ $(document).ready(function() {
   $('.arrow').click(function () {
     $menu.toggleClass('is-active');
   });
-
-
 });

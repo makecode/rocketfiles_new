@@ -163,4 +163,51 @@
     &:hover
       background-color: #ff7353
 
+  &.is-earth
+    width: 20px
+    height: 20px
+    background: url("../img/ico_earch.png")
+
+  &.is-arrow-left
+    width: 12px
+    height: 8px
+    &:after,
+    &:before
+      position: absolute
+      content: ''
+      width: 1px
+      height: 5px
+      background-color: $textGreyDark
+
+    &:after
+      left: 0
+      top: 0
+      transform: rotate(45deg)
+
+    &:before
+      left: 0
+      bottom: 0
+      transform: rotate(-45deg)
+
+  &.is-arrow-right
+    width: 12px
+    height: 8px
+    &:after,
+    &:before
+      position: absolute
+      content: ''
+      width: 1px
+      height: 5px
+      background-color: $textGreyDark
+
+    &:after
+      right: 0
+      top: 0
+      transform: rotate(-45deg)
+
+    &:before
+      right: 0
+      bottom: 0
+      transform: rotate(45deg)
+
 

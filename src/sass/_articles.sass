@@ -16,6 +16,20 @@
     +r(540)
       width: 100%
 
+  &.small
+
+    .articles__el
+      margin-bottom: 15px
+      width: 200px
+
+    .article
+      height: 210px
+
+      &__descr
+        overflow: hidden
+        text-overflow: ellipsis
+        white-space: nowrap
+
 .article
   width: 100%
   border: 1px solid #eaeaea
@@ -24,17 +38,40 @@
 
   &:hover
     .article__descr
-      text-decoration: underline
+      text-decoration: none
+      color: $textLink
 
   &__link
     display: flex
     flex-direction: column
+
+    &:hover
+      text-decoration: none
+
+  &__img
+    position: relative
+
+  &__tag
+    position: absolute
+    left: 0
+    bottom: 4px
+    padding: 0 15px
+    height: 24px
+    line-height: 24px
+    color: #fff
+    background-color: #000
+    opacity: .6
 
   &__descr
     padding: 16px 15px
     font-size: 14px
     color: $textGreyDark
     transition: $general-transition
+    +h300
+
+  &__term
+    padding: 0 15px
+    font-size: 12px
     +h300
 
 .article-main

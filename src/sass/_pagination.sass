@@ -1,0 +1,38 @@
+.pagination
+  margin: 20px 0
+  text-align: center
+
+  &__list
+    display: inline-flex
+
+  &__el
+    margin: 0 3px
+
+    &.is-active,
+    &:hover
+      a
+        color: #fff
+        background-color: #079eeb
+        text-decoration: none
+      i
+        &:after,
+        &:before
+          background-color: #fff
+
+  &__link
+    position: relative
+    display: flex
+    align-items: center
+    padding: 0 12px
+    margin: 0
+    height: 32px
+    line-height: 30px
+    background-color: #f7f7f7
+    color: $textGreyDark
+    cursor: pointer
+    box-sizing: border-box
+    transition: all .3s ease-in-out
+    +h300
+
+  i
+    transition: all .3s ease-in-out

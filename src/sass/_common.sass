@@ -32,11 +32,11 @@ h1
   color: $textGreyDark
   +h700
 
-  span
-    padding-left: 7px
-    font-size: 16px
-    color: $textGreyLight
-    +h300
+  //span
+  //  padding-left: 7px
+  //  font-size: 16px
+  //  color: $textGreyLight
+  //  +h300
 
 h2
   font-size: 22px
@@ -89,6 +89,9 @@ button
 .i-bold
   +h700
 
+.i-light
+  +h300
+
 .i-upper
   text-transform: uppercase
 
@@ -103,6 +106,11 @@ button
 
 // common blocks
 
+.title
+
+  &__subtitle
+    +h300
+
 .copyright
 
   &__descr
@@ -116,6 +124,9 @@ button
 .banner
   margin-bottom: 15px
 
+  &__link
+    display: block
+
   &__name
     display: flex
     margin-bottom: 6px
@@ -126,6 +137,8 @@ button
 .discussion
   margin-top: 22px
   margin-bottom: 60px
+  clear: both
+
   +r(1024)
     margin-bottom: 0
 
@@ -162,3 +175,64 @@ button
 
   +r(1024)
     font-size: 12px
+
+.sidebar-head
+  position: relative
+  display: flex
+  justify-content: space-between
+  align-items: center
+  border-bottom: 1px solid #e3e3e3
+
+  &__title
+    position: relative
+    padding-bottom: 10px
+
+    &:after
+      position: absolute
+      content: ''
+      bottom: -1px
+      left: 0
+      width: 100%
+      height: 2px
+      background-color: $textLink
+
+.top-head
+
+  &__title
+    display: flex
+    align-items: center
+
+
+  &__link
+    position: relative
+    ////width: 12px
+    ////height: 8px
+    //
+    //&:after,
+    //&:before
+    //  position: absolute
+    //  content: ''
+    //  width: 1px
+    //  height: 5px
+    //  background-color: $textGreyDark
+    //
+    //&:after
+    //  right: 0
+    //  top: 0
+    //  transform: rotate(-45deg)
+    //
+    //&:before
+    //  right: 0
+    //  bottom: 0
+    //  transform: rotate(45deg)
+
+  &__subtitle
+    display: block
+    padding-left: 7px
+    font-size: 16px
+    color: $textGreyLight
+    +h300
+
+  i
+    width: 12px
+    height: 8px
