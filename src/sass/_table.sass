@@ -1,5 +1,12 @@
+.table-container
+  table-layout: fixed
+  overflow-x: scroll
+  white-space: nowrap
+
 .table
   width: 100%
+  min-width: 600px
+
 
   tr
     display: flex
@@ -9,6 +16,9 @@
 
   td
     font-size: 16px
+    +r(550)
+      font-size: 14px
+
     &:first-child
       width: 36%
 

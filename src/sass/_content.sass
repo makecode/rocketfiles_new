@@ -42,13 +42,12 @@
         padding-top: 15px
 
       &__left
-        width: 220px
+        width: 290px
         margin-right: 40px
         flex-shrink: 0
 
         +r(1024)
-          margin-right: 0
-          width: 100%
+          display: none
 
       &__right
         flex-basis: 100%
@@ -64,3 +63,7 @@
 
         +r(550)
           font-size: 12px
+
+  &.is-5-inner
+    padding-top: 20px
+

@@ -22,10 +22,20 @@
       margin-bottom: 15px
       width: 200px
 
+      +r(768)
+        width: 48%
+        margin-bottom: 20px
+
+      +r(540)
+        width: 100%
+
     .article
-      height: 210px
 
       &__descr
+        padding: 12px 15px 10px 15px
+
+      &__link
+        display: block
         overflow: hidden
         text-overflow: ellipsis
         white-space: nowrap
@@ -37,16 +47,15 @@
   transition: $general-transition
 
   &:hover
-    .article__descr
+    .article__link
       text-decoration: none
       color: $textLink
 
   &__link
-    display: flex
-    flex-direction: column
-
-    &:hover
-      text-decoration: none
+    font-size: 14px
+    color: $textGreyDark
+    transition: $general-transition
+    +h300
 
   &__img
     position: relative
@@ -63,15 +72,13 @@
     opacity: .6
 
   &__descr
-    padding: 16px 15px
-    font-size: 14px
-    color: $textGreyDark
-    transition: $general-transition
-    +h300
+    padding: 12px 15px 18px 15px
 
   &__term
-    padding: 0 15px
+    display: inline-block
+    padding-top: 10px
     font-size: 12px
+    color: $textGreyLight
     +h300
 
 .article-main

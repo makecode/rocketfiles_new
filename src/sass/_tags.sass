@@ -9,14 +9,19 @@
     &:last-child
       margin-right: 0
 
+    &.is-active
+      .tags__link
+        border-bottom: 2px solid $textLink
+
   &__link
     padding: 0 15px
     height: 28px
     line-height: 28px
     background-color: #f7f7f7
 
-    &:hover
-      text-decoration: none
+.tags-wrap
+  margin-top: 4px
 
-    &:active
-      border-bottom: 2px solid $textLink
+  &__descr
+    font-size: 16px
+

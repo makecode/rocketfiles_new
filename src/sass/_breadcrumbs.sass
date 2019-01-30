@@ -27,7 +27,7 @@
     &:last-child
       padding-right: 0
       a
-        color: #68767d
+        color: $textGreyLight
         pointer-events: none
         +h300
 
@@ -44,3 +44,35 @@
 
     &:hover
       text-decoration: underline
+
+  &.is-big
+
+    .breadcrumbs
+
+      &__el
+        padding-right: 32px
+        &:last-child
+          .breadcrumbs__link
+            +h300
+
+        &:after,
+        &:before
+          position: absolute
+          content: ''
+          right: 12px
+          width: 2px
+          height: 9px
+          background-color: $textGreyDark
+
+        &:before
+          top: 14px
+          transform: rotate(-45deg)
+
+        &:after
+          bottom: 11px
+          transform: rotate(45deg)
+
+      &__link
+        font-size: 28px
+        color: #434a4c
+        +h700
