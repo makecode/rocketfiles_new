@@ -1,7 +1,6 @@
 .software
   padding: 20px 0
   display: flex
-  justify-content: space-between
   align-items: center
   border-bottom: 1px solid #eaeaea
   cursor: pointer
@@ -14,26 +13,39 @@
       color: $textLink
 
   &__left
+    width: 80%
+    +r(768)
+      width: 70%
+
+  &__right
+    width: 20%
+    text-align: right
+    +r(768)
+      width: 30%
+
+  &__link
+    display: flex
+    transition: all .3s ease-in-out
+
+    &:hover
+      text-decoration: none
+
+  &__img
     width: 38px
     height: 38px
     min-width: 38px
     margin-right: 15px
 
-  &__center
-    //margin-right: 30px
-    flex: 1
+  &__info
     overflow: hidden
-
-  &__right
-    display: flex
+    white-space: nowrap
+    text-overflow: ellipsis
 
   &__title
     margin-right: 7px
     color: $textGreyDark
     font-size: 16px
     +h700
-    +r(550)
-      font-size: 13px
 
   &__subtitle
     font-size: 12px
@@ -48,36 +60,108 @@
     text-overflow: ellipsis
     +h300
 
-  &__more
-    margin-top: 11px
-    text-align: center
-
   &__btn
     text-align: center
     width: 126px
     height: 30px
     line-height: 30px
+    font-size: 13px
     background-color: #45b54d
     border: 1px solid #45b54d
     color: #fff
     cursor: pointer
-    +r(768)
+    +r(550)
       width: 100px
 
     &:hover
       background-color: #3cc044
       border-color: #3cc044
+      text-decoration: none
 
   .download
     min-width: 160px
     text-align: center
-    //margin-right: 30px
+
+    +r(768)
+      min-width: 100px
+
+    +r(550)
+      min-width: 70px
 
     &__quantity
       font-size: 16px
       +h700
 
+      +r(550)
+        font-size: 14px
+
     &__text
       font-size: 12px
       color: $textGreyLight
       +h300
+
+  &.is-versions
+
+    .software
+
+      +r(550)
+        justify-content: space-between
+
+      &__left
+        width: 30%
+        +r(550)
+          width: 50%
+
+      &__center
+        width: 50%
+
+        +r(768)
+          width: 40%
+
+        +r(550)
+          display: none
+
+      &__right
+        width: 20%
+        text-align: right
+
+        +r(768)
+          width: 30%
+
+        +r(550)
+          width: 50%
+
+      &__link
+        display: flex
+        align-items: center
+
+      &__data
+        display: flex
+        justify-content: space-around
+
+      &__title
+        +r(550)
+          font-size: 16px
+
+      &__btn
+        +r(550)
+          width: 126px
+
+  &.is-downloads
+    .software
+      &__left
+        width: 60%
+
+        +r(550)
+          width: 70%
+      &__center
+        width: 20%
+
+        +r(550)
+          display: none
+
+      &__right
+        width: 20%
+        +r(550)
+          width: 30%
+
