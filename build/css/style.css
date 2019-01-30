@@ -394,7 +394,7 @@ button { background-color: transparent; }
 
 .article { width: 100%; border: 1px solid #eaeaea; cursor: pointer; transition: all 0.3s ease-in-out; }
 .article:hover .article__link { text-decoration: none; color: #0091de; }
-.article__link { font-size: 14px; color: #434a4d; transition: all 0.3s ease-in-out; font-family: "roboto-light", Helvetica, Arial, sans-serif; }
+.article__link { display: block; font-size: 14px; color: #434a4d; transition: all 0.3s ease-in-out; font-family: "roboto-light", Helvetica, Arial, sans-serif; }
 .article__img { position: relative; }
 .article__tag { position: absolute; left: 0; bottom: 4px; padding: 0 15px; height: 24px; line-height: 24px; color: #fff; background-color: #000; opacity: 0.6; }
 .article__descr { padding: 12px 15px 18px 15px; }
@@ -810,7 +810,7 @@ button { background-color: transparent; }
 .table td .software__link:hover { color: #0091de; text-decoration: none; }
 .table img { width: 38px; }
 
-.tags { margin-top: 15px; margin-bottom: 20px; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+.tags { margin-top: 15px; margin-bottom: 20px; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 .tags__el { margin-right: 6px; }
 .tags__el:last-child { margin-right: 0; }
 .tags__el.is-active .tags__link { border-bottom: 2px solid #0091de; }
@@ -883,7 +883,8 @@ button { background-color: transparent; }
  .preview__descr{ font-size: 14px; }
  .row.top-head .row__wrap{ -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
  .row.top-head .row__left{ margin-bottom: 20px; }
- .software__btn{ width: 100px; } }
+ .software__btn{ width: 100px; }
+ .tags__el{ margin-bottom: 6px; } }
 @media only screen and (max-width: 600px){
  .mobile-menu .search{ display: block; width: 100%; }
  .search{ display: none; } }
@@ -892,6 +893,7 @@ button { background-color: transparent; }
  .content.is-sidebar .tabs__el{ font-size: 12px; }
  .detailed-info .list{ -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
  .detailed-info .list__el{ margin-right: 0; }
+ .info__banner{ width: 100%; margin-left: 0; }
  .list__name{ font-size: 14px; }
  .pre-footer__flex{ -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
  .pre-footer__wrap{ margin-bottom: 10px; }
