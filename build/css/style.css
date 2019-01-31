@@ -499,6 +499,7 @@ button { background-color: transparent; }
 .content.is-sidebar .content__right { -webkit-flex-basis: 100%; -ms-flex-preferred-size: 100%; flex-basis: 100%; }
 .content.is-sidebar .tabs { margin-top: 0; }
 .content.is-sidebar .tabs__el { padding: 6px 25px 14px; }
+.content.is-3-inner .banner { margin-bottom: 0; }
 .content.is-5-inner { padding-top: 20px; }
 .content.is-6-inner .row__wrap { margin-bottom: 12px; padding-top: 10px; padding-bottom: 25px; }
 .content.is-6-inner .aside { padding-top: 15px; }
@@ -883,9 +884,10 @@ button { background-color: transparent; }
  .articles__el:first-child{ width: 48%; }
  .articles__el{ width: 48%; margin-bottom: 20px; }
  .articles.small .articles__el{ width: 48%; margin-bottom: 20px; }
- .article-main{ border: 1px solid #eaeaea; padding-bottom: 15px; }
+ .article-main{ margin-bottom: 0; border: 1px solid #eaeaea; padding-bottom: 15px; }
  .article-main .preview{ display: none; }
  .article-main .article__descr{ display: block; height: calc(25px * 2); overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+ .content.is-5-inner .title__subtitle{ display: inline-block; margin-top: 5px; }
  .container{ width: 100%; }
  .header{ position: fixed; top: 0; left: 0; width: 100%; z-index: 500; }
  .pre-footer .list{ margin-right: 25px; }
@@ -902,6 +904,7 @@ button { background-color: transparent; }
  .software.is-versions .software__right{ width: 30%; }
  .software.is-downloads .software__center{ width: 17%; }
  .software.is-downloads .software__right{ width: 23%; }
+ .tags{ margin-bottom: 10px; }
  .tags__el{ margin-bottom: 6px; } }
 @media only screen and (max-width: 600px){
  .mobile-menu .search{ display: block; width: 100%; }
