@@ -8,10 +8,16 @@
 
   &__title
 
+    h1
+      display: inline
+
     .release
-      margin-left: 8px
+      margin-left: 5px
       font-size: 16px
       color: $textGreyLight
+
+      +r(768)
+        margin-left: 0
 
     .subtitle
       font-size: 28px

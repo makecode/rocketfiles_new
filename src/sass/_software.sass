@@ -78,30 +78,8 @@
       border-color: #3cc044
       text-decoration: none
 
-  .download
-    min-width: 160px
-    text-align: center
-
-    +r(768)
-      min-width: 100px
-
-    +r(550)
-      min-width: 70px
-
-    &__quantity
-      font-size: 16px
-      +h700
-
-      +r(550)
-        font-size: 14px
-
-    &__text
-      font-size: 12px
-      color: $textGreyLight
-      +h300
-
   &.is-versions
-
+    padding: 10px 0
     .software
 
       +r(550)
@@ -109,6 +87,10 @@
 
       &__left
         width: 30%
+
+        +r(768)
+          width: 35%
+
         +r(550)
           width: 50%
 
@@ -116,7 +98,7 @@
         width: 50%
 
         +r(768)
-          width: 40%
+          width: 35%
 
         +r(550)
           display: none
@@ -138,6 +120,8 @@
       &__data
         display: flex
         justify-content: space-around
+        font-size: 16px
+        color: #434a4d
 
       &__title
         +r(550)
@@ -148,20 +132,44 @@
           width: 126px
 
   &.is-downloads
+
     .software
+
       &__left
         width: 60%
 
         +r(550)
           width: 70%
+
       &__center
         width: 20%
+
+        +r(768)
+          width: 17%
 
         +r(550)
           display: none
 
       &__right
         width: 20%
+
+        +r(768)
+          width: 23%
+
         +r(550)
           width: 30%
 
+  .download
+    text-align: center
+
+    &__quantity
+      font-size: 16px
+      +h700
+
+      +r(550)
+        font-size: 14px
+
+    &__text
+      font-size: 12px
+      color: $textGreyLight
+      +h300
