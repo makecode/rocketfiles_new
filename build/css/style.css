@@ -444,10 +444,10 @@ button { background-color: transparent; }
 .btn-green:hover .btn-green__left { background-color: #42ad49; }
 .btn-green:hover .btn-green__right { background-color: #48b950; }
 .btn-green__left { padding: 0 13px; background-color: #39ac42; }
-.btn-green__right { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; padding: 13px 45px 10px 12px; background-color: #45b54d; line-height: 1; }
+.btn-green__right { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; padding: 15px 37px 10px 20px; background-color: #45b54d; line-height: 1; }
 .btn-green span { display: -webkit-flex; display: -ms-flexbox; display: flex; color: white; }
 .btn-green span:first-child { margin-bottom: 10px; font-size: 17px; font-family: "roboto-bold", Helvetica, Arial, sans-serif; }
-.btn-green span:last-child { font-size: 11px; font-family: "roboto-light", Helvetica, Arial, sans-serif; }
+.btn-green span:last-child { font-size: 13px; font-family: "roboto-light", Helvetica, Arial, sans-serif; }
 
 .btn-scroll { cursor: pointer; }
 
@@ -905,7 +905,8 @@ button { background-color: transparent; }
  .software.is-downloads .software__center{ width: 17%; }
  .software.is-downloads .software__right{ width: 23%; }
  .tags{ margin-bottom: 10px; }
- .tags__el{ margin-bottom: 6px; } }
+ .tags__el{ margin-bottom: 6px; }
+ .tips{ margin-right: 20px; } }
 @media only screen and (max-width: 600px){
  .mobile-menu .search{ display: block; width: 100%; }
  .search{ display: none; } }
