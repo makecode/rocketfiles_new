@@ -428,9 +428,10 @@ button { background-color: transparent; }
 .breadcrumbs__el:last-child:after, .breadcrumbs__el:last-child:before { display: none; }
 .breadcrumbs__link, .breadcrumbs__link:visited { color: #434a4d; font-size: 13px; letter-spacing: 0; font-family: "roboto-regular", Helvetica, Arial, sans-serif; }
 .breadcrumbs__link:hover, .breadcrumbs__link:visited:hover { text-decoration: underline; }
-.breadcrumbs.is-big .breadcrumbs__el { padding-right: 32px; }
+.breadcrumbs.is-big .breadcrumbs__el { padding-right: 33px; }
+.breadcrumbs.is-big .breadcrumbs__el:last-child { padding-right: 0; }
 .breadcrumbs.is-big .breadcrumbs__el:last-child .breadcrumbs__link { font-family: "roboto-light", Helvetica, Arial, sans-serif; }
-.breadcrumbs.is-big .breadcrumbs__el:after, .breadcrumbs.is-big .breadcrumbs__el:before { position: absolute; content: ""; right: 12px; width: 2px; height: 9px; background-color: #434a4d; }
+.breadcrumbs.is-big .breadcrumbs__el:after, .breadcrumbs.is-big .breadcrumbs__el:before { position: absolute; content: ""; right: 15px; width: 2px; height: 9px; background-color: #434a4d; }
 .breadcrumbs.is-big .breadcrumbs__el:before { top: 14px; -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg); }
 .breadcrumbs.is-big .breadcrumbs__el:after { bottom: 11px; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); }
 .breadcrumbs.is-big .breadcrumbs__link { font-size: 28px; color: #434a4c; font-family: "roboto-bold", Helvetica, Arial, sans-serif; }
@@ -824,8 +825,8 @@ button { background-color: transparent; }
 .tags__link { padding: 0 15px; height: 28px; line-height: 28px; background-color: #f7f7f7; border-bottom: 2px solid transparent; transition: all 0.3s ease-in-out; }
 .tags__link:hover { text-decoration: none; border-bottom: 2px solid #0091de; }
 
-.tags-wrap { margin-top: 4px; }
-.tags-wrap__descr { font-size: 16px; }
+.tags-wrap { margin-top: 2px; }
+.tags-wrap__descr { font-size: 16px; font-family: "roboto-light", Helvetica, Arial, sans-serif; }
 
 .tips { max-width: 300px; float: right; margin: 0 38px 0 20px; }
 .tips__list { margin-top: 10px; }
@@ -911,7 +912,7 @@ button { background-color: transparent; }
  .mobile-menu .search{ display: block; width: 100%; }
  .search{ display: none; } }
 @media only screen and (max-width: 550px){
- h1{ font-size: 22px; line-height: 1; }
+ h1{ font-size: 22px; }
  .card{ width: 100%; }
  .content.is-main .block-head__right{ display: none; }
  .content.is-sidebar .tabs__el{ font-size: 12px; }

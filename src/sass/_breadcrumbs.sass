@@ -50,8 +50,9 @@
     .breadcrumbs
 
       &__el
-        padding-right: 32px
+        padding-right: 33px
         &:last-child
+          padding-right: 0
           .breadcrumbs__link
             +h300
 
@@ -59,7 +60,7 @@
         &:before
           position: absolute
           content: ''
-          right: 12px
+          right: 15px
           width: 2px
           height: 9px
           background-color: $textGreyDark
@@ -76,3 +77,7 @@
         font-size: 28px
         color: #434a4c
         +h700
+
+      //h1
+        //+r(550)
+        //  line-height: 1.4
