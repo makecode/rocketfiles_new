@@ -440,7 +440,7 @@ button { background-color: transparent; }
 
 .btn-transparent { display: inline-block; font-size: 13px; width: 100px; height: 26px; line-height: 25px; color: #079eeb; text-align: center; border: 1px solid #079eeb; background-color: transparent; transition: all 0.3s ease-in-out; cursor: pointer; }
 .btn-transparent:hover { background-color: #079eeb; color: white; text-decoration: none; }
-.btn-transparent.large { width: 160px; height: 30px; line-height: 30px; }
+.btn-transparent.large { width: 160px; height: 30px; line-height: 28px; }
 
 .btn-green { display: -webkit-flex; display: -ms-flexbox; display: flex; color: white; height: 70px; line-height: 70px; transition: all 0.3s ease-in-out; }
 .btn-green:hover { text-decoration: none; }
