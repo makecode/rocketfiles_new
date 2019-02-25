@@ -44,7 +44,7 @@
         padding: 12px 15px 10px 15px
 
 .article
-  padding-bottom: 10px
+  //padding-bottom: 10px
   width: 100%
   border: 1px solid #eaeaea
   box-sizing: border-box
@@ -52,9 +52,14 @@
   transition: $general-transition
 
   &:hover
-    .article__link
+    .article__descr
       text-decoration: none
       color: $textLink
+
+  &__main-link
+    padding-bottom: 10px
+    &:hover
+      text-decoration: none
 
   &__link
     display: block
@@ -78,12 +83,16 @@
     background-color: rgba(#000, .6)
 
   &__descr
+    font-size: 14px
+    color: $textGreyDark
+    transition: $general-transition
     padding: 12px 15px 18px 15px
     height: calc(25px * 2)
     overflow: hidden
     display: -webkit-box
     -webkit-line-clamp: 2
     -webkit-box-orient: vertical
+    +h300
 
   &__term
     display: inline-block
