@@ -1,11 +1,49 @@
 .card
-  width: 250px
+  margin-right: 1.25%
+  width: 24%
   box-sizing: border-box
+  &:nth-child(4)
+    margin-right: 0
+  &:last-child
+    margin-right: 0
   +r(1200)
-    margin-bottom: 20px
+    &:nth-child(4)
+      margin-right: 0
 
-  +r(550)
+  +r(1024)
+    width: 32%
+    margin-right: 2%
+    &:nth-child(3)
+      margin-right: 0
+    &:nth-child(4)
+      margin-right: 2%
+    &:nth-child(6)
+      margin-right: 0
+    &:nth-child(9)
+      margin-right: 0
+  +r(768)
+    width: 49%
+    margin-right: 2%
+
+    &:nth-child(2n)
+      margin-right: 0
+
+    &:nth-child(3n)
+      margin-right: 2%
+
+    &:nth-child(4n)
+      margin-right: 0
+
+    &:nth-child(6n)
+      margin-right: 0
+    &:nth-child(8n)
+      margin-right: 0
+
+  +r(540)
     width: 100%
+    margin-right: 0
+    &:nth-child(3)
+      margin-right: 0
 
   &__head
     padding: 10px 0
@@ -103,6 +141,7 @@
   padding: 0 10px
   display: flex
   align-items: center
+
   &:hover
     text-decoration: none
     .item-app__title
@@ -113,6 +152,11 @@
     width: 28px
     height: 28px
     min-width: 28px
+
+  &__right
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap
 
   &__title
     color: $textGreyDark
